@@ -36,5 +36,12 @@ namespace AtividadeAppMP
             frmfunc func = new frmfunc();
             func.Show();
         }
+
+        private void tsmiestadio_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmestadio estadio = new frmestadio();
+            estadio.Show();
+        }
     }
 }
