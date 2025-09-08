@@ -20,6 +20,10 @@
             base.Dispose(disposing);
         }
 
+        public void SetResult(string value)
+        {
+            txtresult.Text = value;
+        }
         #region Windows Form Designer generated code
 
         /// <summary>

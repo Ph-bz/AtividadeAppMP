@@ -34,6 +34,7 @@
             this.tsmiestadio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmifunc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiexit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmilanche = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             this.tsmiprograma.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmilivro,
             this.tsmiestadio,
-            this.tsmifunc});
+            this.tsmifunc,
+            this.tsmilanche});
             this.tsmiprograma.Name = "tsmiprograma";
             this.tsmiprograma.Size = new System.Drawing.Size(94, 24);
             this.tsmiprograma.Text = "Programas";
@@ -87,6 +89,13 @@
             this.tsmiexit.Text = "Sair";
             this.tsmiexit.Click += new System.EventHandler(this.tsmiexit_Click);
             // 
+            // tsmilanche
+            // 
+            this.tsmilanche.Name = "tsmilanche";
+            this.tsmilanche.Size = new System.Drawing.Size(224, 26);
+            this.tsmilanche.Text = "Lanche";
+            this.tsmilanche.Click += new System.EventHandler(this.tsmilanche_Click);
+            // 
             // frmmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -95,7 +104,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmmenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -114,5 +123,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiestadio;
         private System.Windows.Forms.ToolStripMenuItem tsmifunc;
         private System.Windows.Forms.ToolStripMenuItem tsmiexit;
+        private System.Windows.Forms.ToolStripMenuItem tsmilanche;
     }
 }

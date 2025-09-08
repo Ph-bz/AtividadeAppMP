@@ -43,5 +43,12 @@ namespace AtividadeAppMP
             frmestadio estadio = new frmestadio();
             estadio.Show();
         }
+
+        private void tsmilanche_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmlanche lanche = new frmlanche();
+            lanche.Show();
+        }
     }
 }
