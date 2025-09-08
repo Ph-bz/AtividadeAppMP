@@ -46,10 +46,9 @@ namespace AtividadeAppMP
 
         private void btnreset_Click(object sender, EventArgs e)
         {
-            txting.Clear();
             txtresult.Clear();
             txtqtdp.Clear();
-            txting.Focus();
+            txtqtdp.Focus();
         }
 
         private void btnvolt_Click(object sender, EventArgs e)

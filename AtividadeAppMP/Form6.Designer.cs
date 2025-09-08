@@ -43,7 +43,7 @@
             // 
             this.lbltxt.AutoSize = true;
             this.lbltxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltxt.Location = new System.Drawing.Point(265, 50);
+            this.lbltxt.Location = new System.Drawing.Point(253, 49);
             this.lbltxt.Name = "lbltxt";
             this.lbltxt.Size = new System.Drawing.Size(258, 23);
             this.lbltxt.TabIndex = 0;
