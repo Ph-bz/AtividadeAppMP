@@ -35,6 +35,7 @@
             this.tsmifunc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiexit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmilanche = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiimc = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.tsmilivro,
             this.tsmiestadio,
             this.tsmifunc,
-            this.tsmilanche});
+            this.tsmilanche,
+            this.tsmiimc});
             this.tsmiprograma.Name = "tsmiprograma";
             this.tsmiprograma.Size = new System.Drawing.Size(94, 24);
             this.tsmiprograma.Text = "Programas";
@@ -96,6 +98,13 @@
             this.tsmilanche.Text = "Lanche";
             this.tsmilanche.Click += new System.EventHandler(this.tsmilanche_Click);
             // 
+            // tsmiimc
+            // 
+            this.tsmiimc.Name = "tsmiimc";
+            this.tsmiimc.Size = new System.Drawing.Size(224, 26);
+            this.tsmiimc.Text = "IMC";
+            this.tsmiimc.Click += new System.EventHandler(this.tsmiimc_Click);
+            // 
             // frmmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,5 +133,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmifunc;
         private System.Windows.Forms.ToolStripMenuItem tsmiexit;
         private System.Windows.Forms.ToolStripMenuItem tsmilanche;
+        private System.Windows.Forms.ToolStripMenuItem tsmiimc;
     }
 }

@@ -24,33 +24,23 @@ namespace AtividadeAppMP
 
         private void btncalc_Click(object sender, EventArgs e)
         {
-            int ttl1, ttl2, ttl3, ttl, x, totalpub, tipoing;
-            tipoing = Convert.ToInt32(txting.Text);
-            totalpub = Convert.ToInt32(txtqtdp.Text);
-            if (tipoing == 1)
-            {
-                x = totalpub * 50 / 100;
-                ttl1 = x * 10;
-                txtresult.Text = ttl1.ToString();
-            }
-            else if (tipoing == 2)
-            {
-                x = totalpub * 10 / 100;
-                ttl2 = x * 30;
-                txtresult.Text = ttl2.ToString();
-            }
-            else if (tipoing == 3)
-            {
-                x = totalpub * 30 / 100;
-                ttl3 = x * 20;
-                txtresult.Text = Convert.ToString(ttl3);
-            }
-            else if (tipoing == 4) 
-            {
-                x = totalpub * 10 / 100;
-                ttl2 = x * 30;
-                txtresult.Text = Convert.ToString(ttl2);
-            }
+            double totp, pop, ger, arq, cad, rdp = 0, rdg = 0, rda = 0, rdc = 0, totr;
+            totp = Convert.ToDouble(txtqtdp.Text);
+            pop = totp * 0.1;
+            ger = totp * 0.5;
+            arq = totp * 0.3;
+            cad = totp * 0.1;
+            if (pop > 0)
+                rdp = pop * 5;
+            if (ger > 0)
+                rdg = ger * 10;
+            if (arq > 0)
+                rda = arq * 20;
+            if (cad > 0)
+                rdc = cad * 30;
+
+            totr = rdp + rdg + rda + rdc;
+            txting.Text = totr.ToString();
 
         }
 
@@ -67,6 +57,11 @@ namespace AtividadeAppMP
             Hide();
             frmmenu menu = new frmmenu();
             menu.Show();
+        }
+
+        private void frmestadio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

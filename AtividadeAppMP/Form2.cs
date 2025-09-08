@@ -50,5 +50,12 @@ namespace AtividadeAppMP
             frmlanche lanche = new frmlanche();
             lanche.Show();
         }
+
+        private void tsmiimc_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmimc imc = new frmimc();
+            imc.Show();
+        }
     }
 }
