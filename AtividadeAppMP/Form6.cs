@@ -27,7 +27,7 @@ namespace AtividadeAppMP
             double al, pe, imc;
             al = Convert.ToDouble(txtalt.Text);
             pe = Convert.ToDouble(txtpeso.Text);
-            imc = pe / al * al;
+            imc = pe / (al * al);
             if (imc < 17)
             {
                 txtimc.Text = "Você possui magreza severa";
@@ -54,7 +54,7 @@ namespace AtividadeAppMP
             }
             else if (imc >= 40)
             {
-                txtimc.Text = Convert.ToString(imc);
+                txtimc.Text = "Você possui obesidade classe III";
             }
         }
 

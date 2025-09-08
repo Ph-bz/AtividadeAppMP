@@ -40,7 +40,7 @@ namespace AtividadeAppMP
                 rdc = cad * 30;
 
             totr = rdp + rdg + rda + rdc;
-            txting.Text = totr.ToString();
+            txtresult.Text = totr.ToString();
 
         }
 
